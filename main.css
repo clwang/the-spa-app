@@ -1,0 +1,66 @@
+@font-face {
+font-family: "Pttoothpaste";
+src: url("./static/fonts/pttoothpaste-webfont.ttf");
+src: 
+url("./static/fonts/pttoothpaste-webfont.woff") format("woff")
+}
+
+@font-face {
+font-family: "SignPainter";
+src: url("./static/fonts/signpainter_housescript_regular.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+.homepage {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.site__title {
+  font-family: Pttoothpaste;
+  color: #6ED9FB;
+  font-size: 66px;
+  margin: 8px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.link--contact {
+  color: black;
+  text-decoration: none;
+}
+
+.image-slider {
+  background-image: url('./static/img/1griffith.jpg');
+  height: calc(100% - 186px);
+  background-size: cover;
+  -ms-background-position-x: center;
+  -ms-background-position-y: bottom;
+  background-position: center bottom;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 93px;
+}
+.footer__title {
+  text-align: center;
+  font-family: SignPainter;
+  color: #FFA6D2;
+  font-size: 34px;
+  margin: 16px;
+}
