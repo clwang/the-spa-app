@@ -43,7 +43,7 @@ body {
 }
 
 .image-slider {
-  background-image: url('./static/img/1griffith.jpg');
+  background-image: url('../img/1griffith.jpg');
   height: calc(100% - 186px);
   background-size: cover;
   -ms-background-position-x: center;
