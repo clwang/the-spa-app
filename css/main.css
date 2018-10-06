@@ -1,13 +1,13 @@
 @font-face {
 font-family: "Pttoothpaste";
-src: url("./static/fonts/pttoothpaste-webfont.ttf");
+src: url("../static/fonts/pttoothpaste-webfont.ttf");
 src: 
-url("./static/fonts/pttoothpaste-webfont.woff") format("woff")
+url("../static/fonts/pttoothpaste-webfont.woff") format("woff")
 }
 
 @font-face {
 font-family: "SignPainter";
-src: url("./static/fonts/signpainter_housescript_regular.ttf");
+src: url("../static/fonts/signpainter_housescript_regular.ttf");
 }
 
 body {
