@@ -64,3 +64,9 @@ body {
   font-size: 34px;
   margin: 16px;
 }
+
+@media (max-width: 400px) {
+  .site__title {
+    font-size: 3em;
+  }
+}
