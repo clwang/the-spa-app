@@ -12,6 +12,8 @@ src: url("../static/fonts/signpainter_housescript_regular.ttf");
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .homepage {
@@ -24,6 +26,8 @@ body {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
+  max-height: 93px;
+  flex-shrink: 0;
 }
 
 .site__title {
@@ -44,29 +48,57 @@ body {
 
 .image-slider {
   background-image: url('../img/1griffith.jpg');
-  height: calc(100% - 186px);
+  min-height: calc(100vh - 186px);
   background-size: cover;
   -ms-background-position-x: center;
   -ms-background-position-y: bottom;
   background-position: center bottom;
+  flex: 1 0 auto;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 93px;
+  max-height: 93px;
+  flex-shrink: 0;
 }
+
 .footer__title {
   text-align: center;
   font-family: SignPainter;
   color: #FFA6D2;
-  font-size: 34px;
-  margin: 16px;
+  font-size: 2em;
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
   .site__title {
     font-size: 3em;
+    margin: 18px 0;
   }
+
+  .image-slider {
+    background-size: 1354px;
+  }
+}
+@media (max-width: 350px) {
+  .image-slider {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-height: 414px) and (orientation: landscape) {
+  .site__title {
+    font-size: 2em;
+    margin: 9px 0;
+  }
+
+  .header, .footer {
+    max-height: 55px;
+  }
+
+  .image-slider {
+    min-height: calc(100vh - 110px);
+  }
+
 }
